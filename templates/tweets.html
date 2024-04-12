@@ -1,0 +1,8 @@
+<!-- tweets.html -->
+<h1>Recent Tweets</h1>
+<ul>
+    {{tweets}}
+{% for tweet in tweets %}
+    <li>{{ tweet.text }}</li>
+{% endfor %}
+</ul>

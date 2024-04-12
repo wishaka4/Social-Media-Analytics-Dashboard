@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Data</title>
+    <!-- Include Bootstrap CSS or any other CSS frameworks for styling -->
+</head>
+<body>
+    <div class="container">
+        <h1>Reddit Posts</h1>
+        <!-- Display DataFrame using Pandas -->
+        <div>
+            {{ df.to_html|safe }}
+        </div>
+    </div>
+    <!-- Include Bootstrap JS or any other JavaScript libraries if needed -->
+</body>
+</html>

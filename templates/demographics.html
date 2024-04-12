@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Demographics</title>
+</head>
+<body>
+    <h1>User Demographics</h1>
+
+    <p>Total number of unique authors: {{ unique_authors_count }}</p>
+
+    <h2>Author Statistics:</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Author</th>
+                <th>Average Score</th>
+                <th>Average Number of Comments</th>
+                <th>Total Posts</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for author_stat in author_stats %}
+                <tr>
+                    <td>{{ author_stat.author }}</td>
+                    <td>{{ author_stat.average_score }}</td>
+                    <td>{{ author_stat.average_num_comments }}</td>
+                    <td>{{ author_stat.total_posts }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Display graphical representation -->
+    <h2>Graphical Representation</h2>
+    <div>
+        {{ graphic|safe }}
+    </div>
+</body>
+</html>

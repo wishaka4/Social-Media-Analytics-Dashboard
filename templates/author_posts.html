@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latest Posts</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Latest Posts</h2>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Score</th>
+            <th>Number of Comments</th>
+            <th>Upvote Ratio</th>
+            <th>selftext</th>
+            <th>link_flair_text</th>
+        </tr>
+        {% for post in posts %}
+        <tr>
+            <td>{{ post.title }}</td>
+            <td>{{ post.author }}</td>
+            <td>{{ post.score }}</td>
+            <td>{{ post.num_comments }}</td>
+            <td>{{ post.upvote_ratio }}</td>
+            <td>{{ post.selftext }}</td>
+            <td>{{ post.link_flair_text }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
