@@ -1,5 +1,15 @@
 # Social-Media-Analytics-Dashboard
 _________________________________
+Social Media Analytics Dashboard:
+- Django for backend development.
+- Django REST framework for building APIs to fetch social media data (e.g., posts, likes, comments).
+- MYSQL database for data storage.
+- Pandas for data analysis on social media engagement, user demographics, 
+
+
+
+
+
 requirements.txt files needs to update first 
 asgiref==3.3.1
 certifi==2023.11.17
